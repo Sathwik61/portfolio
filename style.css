@@ -10,6 +10,7 @@
   scroll-behavior: smooth;
   letter-spacing: .4px;
 }
+
 :root{
   --color-black: #000000;
   --color-white: #ffffff;
@@ -110,7 +111,7 @@ img{
 
 /* .......................Start Nav Bar......................... */
 nav{
-  height: 8rem;
+  height: 5rem;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -128,6 +129,7 @@ nav{
 }
 .logo{
   font-size: 32px ;
+  font-weight: bold;
   color: var(--color-black) !important;
   text-decoration: none !important;
 }
@@ -162,6 +164,7 @@ header{
 }
 .header-action-aria{
   margin-top: .7rem;
+  justify-content: center;
   display: flex;
   gap: .7rem;
 }
@@ -290,6 +293,10 @@ footer .nav-links{
   justify-content: center;
   margin-bottom: 3rem;
 }
+
+.dr{
+  display: none;
+}
 /* .......................End Footer Section......................... */
 
 
@@ -316,7 +323,8 @@ footer .nav-links{
 @media (max-width:991px) {
     /*Start Nav  */
     .logo{
-      display: none;
+font-weight: bold;
+      /* display: none; */
     }
     .nav-links{
       justify-content: center;    
@@ -420,13 +428,64 @@ footer .nav-links{
   }
 
   .logo {
+   
     font-size: 24px;
+    /* font-weight: 800; */
+    font-weight: bold;
   }
 
   .experience-container,
   .project-container {
     grid-template-columns: 1fr; /* Adjust grid layout for smaller screens */
   }
+  /* new element */
+
+  .dr{
+
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  .dd{
+    z-index: 1;
+    /* display: none; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 95%;
+    background:  #f4f1f1;
+    /* background:  #2c2c2c; */
+    
+  }
+  .logoandham{
+    margin-top: 3vh;
+    padding: 1vh;
+    display: flex;
+    gap: 60vw;
+    flex-direction: row;
+  }
+  .nav-linksr{
+   width: 100%;
+  
+    
+  }
+  .nav-linksr li{
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    
+
+  }
+  .nav-linksr li a{
+    
+    color: #000000;
+    /* color: #ffffff; */
+  }
+
 }
 
 /* Tablet Styles */
